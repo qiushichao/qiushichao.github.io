@@ -4,26 +4,29 @@
 
 <head>
     <meta charset="utf-8">
-    <title>index</title>
+    <title>G Xmas</title>
     <link href="css/other_pages.css" rel='stylesheet' type='text/css' />
     <link href="css/global.css" rel='stylesheet' type='text/css' />
-
-    <script src="js/index.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" />
-
+   
 </head>
 
-<body>
-    <audio autoplay="autoplay" controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
-    <span onclick="play();" style="color:#FFF" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>
-    <span onclick="replay();" style="color:#FFF" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
-    <hr style="color:#FFF">
-    <script src="js/index.js">
-        play();
-        replay();
-        mOver(this);
-        mOut(this);
-    </script>
+<body onload="startTime()"> 
+    <span class="mini_music_player">
+
+        <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
+        <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
+        <span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
+        <span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
+
+
+    </span>
+    <span id="date_and_time">
+    </span>
+    <br>
+    <hr>
     <!--head-->
     <div class="header">
         <img src="img/logo.png" alt="G Christmas" width="60" height="60">&nbsp;&nbsp;G Xmas
@@ -57,33 +60,33 @@
         </ul>
     </div>
     <!--content-->
-    <div class="content" style="color : #CCC; font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif;">
-        <h2>
-            <p>Christmas Day is celebrated as a major festival and public holiday in countries around the world, including many
-                whose populations are mostly non-Christian. In some non-Christian areas, periods of former colonial rule
-                introduced the celebration (e.g. Hong Kong); in others, Christian minorities or foreign cultural influences
-                have led populations to observe the holiday. Countries such as Japan, where Christmas is popular despite
-                there being only a small number of Christians, have adopted many of the secular aspects of Christmas, such
-                as gift-giving, decorations, and Christmas trees.
-            </p>
-            <p> Countries in which Christmas is not a formal public holiday include Afghanistan, Algeria, Azerbaijan, Bahrain,
-                Bhutan, Cambodia, China (excepting Hong Kong and Macao), the Comoros, Iran, Israel, Japan, Kuwait, Laos,
-                Libya, the Maldives, Mauritania, Mongolia, Morocco, North Korea, Oman, Pakistan, Qatar, the Sahrawi Republic,
-                Saudi Arabia, Somalia, Tajikistan, Thailand, Tunisia, Turkey, Turkmenistan, the United Arab Emirates, Uzbekistan,
-                Vietnam, and Yemen. Christmas celebrations around the world can vary markedly in form, reflecting differing
-                cultural and national traditions.
-            </p>
-            <p> Among countries with a strong Christian tradition, a variety of Christmas celebrations have developed that incorporate
-                regional and local cultures. For Christians, participating in a religious service plays an important part
-                in the recognition of the season. Christmas, along with Easter, is the period of highest annual church attendance.
-                In Catholic countries, people hold religious processions or parades in the days preceding Christmas. In other
-                countries, secular processions or parades featuring Santa Claus and other seasonal figures are often held.
-                Family reunions and the exchange of gifts are a widespread feature of the season. Gift giving takes place
-                on Christmas Day in most countries. Others practice gift giving on December 6, Saint Nicholas Day, and January
-                6, Epiphany.
-            </p>
-            <p align="center"><img src="img/Map_of_Countries_that_do_not_recognize_Christmas_as_Public_Holiday.png" width="80%" ></p>
-        </h2>
+    <div class="content">
+        <h1>Christmas Customs</h1>
+        <p>Christmas Day is celebrated as a major festival and public holiday in countries around the world, including many
+            whose populations are mostly non-Christian. In some non-Christian areas, periods of former colonial rule introduced
+            the celebration (e.g. Hong Kong); in others, Christian minorities or foreign cultural influences have led populations
+            to observe the holiday. Countries such as Japan, where Christmas is popular despite there being only a small
+            number of Christians, have adopted many of the secular aspects of Christmas, such as gift-giving, decorations,
+            and Christmas trees.
+        </p>
+        <p> Countries in which Christmas is not a formal public holiday include Afghanistan, Algeria, Azerbaijan, Bahrain, Bhutan,
+            Cambodia, China (excepting Hong Kong and Macao), the Comoros, Iran, Israel, Japan, Kuwait, Laos, Libya, the Maldives,
+            Mauritania, Mongolia, Morocco, North Korea, Oman, Pakistan, Qatar, the Sahrawi Republic, Saudi Arabia, Somalia,
+            Tajikistan, Thailand, Tunisia, Turkey, Turkmenistan, the United Arab Emirates, Uzbekistan, Vietnam, and Yemen.
+            Christmas celebrations around the world can vary markedly in form, reflecting differing cultural and national
+            traditions.
+        </p>
+        <p> Among countries with a strong Christian tradition, a variety of Christmas celebrations have developed that incorporate
+            regional and local cultures. For Christians, participating in a religious service plays an important part in
+            the recognition of the season. Christmas, along with Easter, is the period of highest annual church attendance.
+            In Catholic countries, people hold religious processions or parades in the days preceding Christmas. In other
+            countries, secular processions or parades featuring Santa Claus and other seasonal figures are often held. Family
+            reunions and the exchange of gifts are a widespread feature of the season. Gift giving takes place on Christmas
+            Day in most countries. Others practice gift giving on December 6, Saint Nicholas Day, and January 6, Epiphany.
+        </p>
+        <p align="center">
+            <img src="img/Map_of_Countries_that_do_not_recognize_Christmas_as_Public_Holiday.png" width="80%">
+        </p>
     </div>
 
 
@@ -92,5 +95,7 @@
         <p>@Copyright 2017 Three-wheel Motorbike, Zhejiang Normal University</p>
     </div>
 </body>
-
+<script type="text/javascript" src="js/mini_music_player.js"></script>
+<script type="text/javascript" src="js/date_and_time.js">	</script>
+<script type="text/javascript" src="js/snow_effect.js">	</script>
 </html>

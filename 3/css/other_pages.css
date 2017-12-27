@@ -9,25 +9,43 @@ html,body{
 	font-size: 12;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 170px;
+	margin-left:250px;
 	position: relative;
 	background-color: rgba(0,0,0,0.5);
 	margin-right: 40px;
 }
+.content script {
+	color: #C0C0C0;
+}
 .content p{
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-size: 14pt;
-}
-
-.content script {
-	color: #C0C0C0;
 }
 .game {
 	height: 300px;
 	width: 100px;
 	margin-left: 400px;
 	position: absolute;
-	left: 4px;
-	top: 85px;
+	left: 5px;
+	top: 90px;
 	border: thick double rgba(204,204,204,1);
+	float: left;
+}
+.game_introduction{
+	height: 401px;
+	width: 500px;
+	margin-left: 400px;
+	position: absolute;
+	left: 182px;
+	top: 86px;
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: rgba(204,204,204,1);
+	border-right-color: rgba(204,204,204,1);
+	border-bottom-color: rgba(204,204,204,1);
+	border-left-color: rgba(204,204,204,1);
+	
 }

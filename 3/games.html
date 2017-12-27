@@ -4,17 +4,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>G Xmas</title>
+    <title>G Xmas - Games</title>
     <link href="css/other_pages.css" rel='stylesheet' type='text/css' />
     <link href="css/global.css" rel='stylesheet' type='text/css' />
     <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 
-<body onload="startTime()">
+<body onLoad="checkCookie()">
     <span class="mini_music_player">
-
+        <span onclick="showOrHideSnow()">Show/Hide Snow</span>
+        &nbsp; &nbsp; &nbsp;
         <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
         Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
         <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
         <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
         <span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
@@ -28,47 +30,59 @@
     <hr>
     <!--head-->
     <div class="header">
-        <img src="img/logo.png" alt="G Christmas" width="60" height="60">&nbsp;&nbsp;G Xmas
+        <a href="index.html">
+            <img src="img/logo.gif" alt="G Christmas" width="100px">
+        </a>&nbsp;&nbsp;G Xmas
     </div>
 
 
     <div class="navibar">
         <ul>
-            <li>
-                <a href="index.html">Home</a>
+            <li onclick="window.open('index.html');">
+                <img src="img/home-icon.png">Home
             </li>
-            <li>
-                <a href="quizes.html">Quizes</a>
             </li>
-            <li>
-                <a href="customs.html">Customs</a>
+            <li onclick="window.open('customs.html');">
+                <img src="img/customs-icon.png"> Customs
             </li>
-            <li>
-                <a href="songs.html">Songs</a>
+            <li onclick="window.open('songs.html');">
+                <img src="img/songs-icon.png"> Songs
             </li>
-            <li>
-                <a href="games.html">Games</a>
+            <li onclick="window.open('games.html');">
+                <img src="img/games-icon.png"> Games
             </li>
-            <li>
-                <a href="about.html">About</a>
+            <li onclick="window.open('about.html');">
+                <img src="img/about-icon.png"> About
             </li>
-            <li>
-                <a href="contact_us.html">Contact us</a>
+            <li onclick="window.open('contact_us.html');">
+                <img src="img/contact_us-icon.png"> Contact us
             </li>
-
-        </ul>
+            </table>
     </div>
     <!--content-->
     <div class="content">
         <h1>Christmas Game</h1>
         <div id="food" class="game">
-            FOOD:
+            Food:
             <a id="out"></a>
-
+            Length:
+            <a id="v"></a>
+            Time:
+            <a id="time"></a>s
         </div>
+        <div class="game_introduction">
+            <p>The pet snake lost its way at Christmas and needed our help to find his way home to get together with his family
+                and celebrate Christmas.</p>
+            <p>First, you can click the "PLAY" button to start the game. After entering the game, you can control the movement
+                of the snake by the direction key, so that you can eat the Christmas food, and you will win when you eat
+                50 foods</p>
+        </div>
+        <span onclick="game();" onmouseover="mOver(this)" onmouseout="mOut(this)">Medium</span>&nbsp;&nbsp;
+        <span onclick="game_fast();" onmouseover="mOver(this)" onmouseout="mOut(this)">Difficult</span>&nbsp;&nbsp;
+        <span onclick="game_slow();" onmouseover="mOver(this)" onmouseout="mOut(this)">Easy</span>&nbsp;&nbsp;user:qc&nbsp;&nbsp;BEST:50
         <br>
         <canvas id="can" width="400" height="400" style="border: medium solid rgba(204,204,204,0.5); background: Black"></canvas>
-        <script src="js/game_js.js"></script>
+
         <br>
         <br>
         <br>
@@ -79,10 +93,11 @@
 
     <!--footer-->
     <div class="footer">
-        <p>@Copyright 2017 Three-wheel Motorbike, Zhejiang Normal University</p>
+        <p align="center">@Copyright 2017 Three-wheel Motorbike, Zhejiang Normal University</p>
     </div>
 </body>
 <script type="text/javascript" src="js/mini_music_player.js"></script>
 <script type="text/javascript" src="js/date_and_time.js">	</script>
 <script type="text/javascript" src="js/snow_effect.js">	</script>
+<script type="text/javascript" src="js/game_js.js">	</script>
 </html>

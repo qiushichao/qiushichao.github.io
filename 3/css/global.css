@@ -15,7 +15,7 @@ hr{
 }
 .header{
 	float: none;
-	height: 60px;
+	height: 100px;
 	font-family: Arial;
 	color: lightyellow;
 	font-size: 40px;
@@ -23,50 +23,69 @@ hr{
 	margin-right: 30px;
 	margin-bottom: 5px;
 	margin-left: 30px;
+	vertical-align: middle;
 }
 
 .navibar {
 	text-decoration: none;
 	float: left;
-	width: 160px;
+	width: 170px;
+	height:800px;
 	border-collapse: collapse;
 	position:absolute;
+	margin-right: 20px;
 }
-.navibar a{
-	color: red;
-	text-decoration: none;
+
+.navibar ul{
+	border:0px solid yellow;
+	list-style-type: none;
+	
 }
 .navibar li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	background: rgb(255, 255, 199);
-	height: 50px;
-	 width: 100px;
-	 line-height: 50px;
+	background-image: url("../img/button.png") ;
+	background-size: 180px 70px;
+	height: 70px;
+	width:180px;
 	font-size: 16px;
 	text-align: center;
-	margin:5px;
 	list-style: none;
-	vertical-align: middle;
 	
+	color: red;
+	text-decoration: none;
+	line-height: 70px;
+	vertical-align: middle;
+	margin-bottom: 15px;
 }
-
-.navibar li:hover{
+.navibar img{
+	width: 60px;
+	height: 60px;
+	margin-top:-10px;
+}
+.navibar li:hover {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	background: yellow;
-	text-decoration: none;
-	height: 50px;
-	 width: 100px;
-	line-height: 50px;
-	font-size: 16px;
+	background-image: url("../img/button.png") ;
+	background-size: 200px 80px;
+	height: 80px;
+	width:200px;
+	font-size: 18px;
 	text-align: center;
-	margin:5px;
 	list-style: none;
-	vertical-align: middle;
 	
+	
+	color: red;
+	text-decoration: none;
+	line-height: 70px;
+	vertical-align: middle;
+	margin-bottom: 15px;
 }
-
+.navibar li:hover .img{
+	width: 750px;
+	height: 705px;
+	margin-top:-10px;
+}
 .footer{
 	margin-top: 10px;
 	position: relative;

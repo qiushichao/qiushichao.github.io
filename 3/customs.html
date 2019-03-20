@@ -4,15 +4,20 @@
 
 <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <title>index</title>
+=======
+    <title>G Xmas</title>
+>>>>>>> parent of 90069d1... update
     <link href="css/other_pages.css" rel='stylesheet' type='text/css' />
     <link href="css/global.css" rel='stylesheet' type='text/css' />
 
     <script src="js/index.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" />
-
+   
 </head>
 
+<<<<<<< HEAD
 <body>
     <audio autoplay="autoplay" controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
     <span onclick="play();" style="color:#FFF" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>
@@ -24,6 +29,24 @@
         mOver(this);
         mOut(this);
     </script>
+=======
+<body onload="startTime()"> 
+    <span class="mini_music_player">
+
+        <audio controls loop preload="auto" src="songs/Various Artists-Jingle Bells.mp3" id="bg_music" hidden>Your browser does not support the audio tag.</audio>
+        Mini Music Player&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span onclick="play();" onmouseover="mOver(this)" onmouseout="mOut(this)">Play/Pause</span>&nbsp;&nbsp;
+        <span onclick="replay();" onmouseover="mOver(this)" onmouseout="mOut(this)">Replay</span>
+        <span onclick="volumeUp();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume+</span>
+        <span onclick="volumeDown();" onmouseover="mOver(this)" onmouseout="mOut(this)">Volume-</span>
+
+
+    </span>
+    <span id="date_and_time">
+    </span>
+    <br>
+    <hr>
+>>>>>>> parent of 90069d1... update
     <!--head-->
     <div class="header">
         <img src="img/logo.png" alt="G Christmas" width="60" height="60">&nbsp;&nbsp;G Xmas
@@ -92,5 +115,11 @@
         <p>@Copyright 2017 Three-wheel Motorbike, Zhejiang Normal University</p>
     </div>
 </body>
+<<<<<<< HEAD
 
+=======
+<script type="text/javascript" src="js/mini_music_player.js"></script>
+<script type="text/javascript" src="js/date_and_time.js">	</script>
+<script type="text/javascript" src="js/snow_effect.js">	</script>
+>>>>>>> parent of 90069d1... update
 </html>

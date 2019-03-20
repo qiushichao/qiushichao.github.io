@@ -1,5 +1,9 @@
 
 .header{
+<<<<<<< HEAD
+=======
+	float: none;
+>>>>>>> parent of 90069d1... update
 	height: 60px;
 	font-family: Arial;
 	color: lightyellow;
@@ -25,7 +29,10 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	background: rgb(255, 255, 199);
+<<<<<<< HEAD
 	
+=======
+>>>>>>> parent of 90069d1... update
 	height: 50px;
 	 width: 100px;
 	 line-height: 50px;

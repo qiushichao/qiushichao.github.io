@@ -12,12 +12,7 @@ html,body{
 	margin-top: 20px;
 	margin-right: 40%;
 	margin-bottom: 220px;
-	margin-left: 200px;
+	margin-left: 170px;
 	position: relative;
-	font-style: italic;
-}
-.content p {
-	font-size: larger;
-	font-weight: bold;
 	font-style: italic;
 }
